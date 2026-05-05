@@ -1,0 +1,36 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+  class?: string;
+}
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = "lazy",
+  fetchpriority = "auto",
+  class: className = "",
+} = Astro.props;
+---
+<div
+  class={`relative inline-block rounded-[44px] bg-bg-1 p-[8px] shadow-[0_30px_120px_-20px_rgba(191,90,242,0.25),0_10px_40px_-10px_rgba(0,0,0,0.6)] ring-1 ring-hairline ${className}`}
+>
+  <div class="overflow-hidden rounded-[36px] bg-black">
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      decoding="async"
+      class="block w-full h-auto"
+    />
+  </div>
+</div>

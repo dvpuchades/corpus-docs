@@ -1,0 +1,74 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Hero from "~/components/home/Hero.astro";
+import ProblemSolution from "~/components/home/ProblemSolution.astro";
+import FeatureGrid from "~/components/home/FeatureGrid.astro";
+import LifestyleBand from "~/components/LifestyleBand.astro";
+import HowItWorks from "~/components/home/HowItWorks.astro";
+import PrivacyCallout from "~/components/home/PrivacyCallout.astro";
+import FinalCta from "~/components/home/FinalCta.astro";
+import { APP_ID, APP_STORE_URL, CONTACT_EMAIL, SITE_URL } from "~/i18n/utils";
+
+const locale = "es" as const;
+const headline = "El entrenador que tu Apple Watch estaba esperando.";
+const subhead =
+  "Corpus lee tus datos de Apple Salud y los convierte en un plan diario hecho a tu medida: sueño, entrenamiento, recuperación y energía. Sin hardware adicional. Sin suscripción.";
+
+const lifestyle = [
+  { src: "/images/lifestyle/running.jpg", alt: "Corredora al amanecer en una carretera" },
+  { src: "/images/lifestyle/cycling.jpg", alt: "Ciclista en carretera abierta" },
+  { src: "/images/lifestyle/track-runner.jpg", alt: "Atleta en pista de atletismo" },
+  { src: "/images/lifestyle/swimming.jpg", alt: "Nadador en aguas abiertas" },
+  { src: "/images/lifestyle/runner.jpg", alt: "Corredor en plena zancada" },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Corpus",
+    applicationCategory: "HealthApplication",
+    operatingSystem: "iOS 26",
+    description: subhead,
+    url: SITE_URL + "/es/",
+    image: SITE_URL + "/og/es.png",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+    installUrl: APP_STORE_URL,
+    sameAs: [APP_STORE_URL],
+    identifier: APP_ID,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Corpus",
+    url: SITE_URL,
+    logo: SITE_URL + "/images/icon/icon-512.png",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: CONTACT_EMAIL,
+      contactType: "customer support",
+      availableLanguage: ["en", "es"],
+    },
+  },
+];
+---
+<BaseLayout
+  locale={locale}
+  title="Corpus — El entrenador que tu Apple Watch estaba esperando."
+  description={subhead}
+  jsonLd={jsonLd}
+>
+  <Hero
+    locale={locale}
+    headline={headline}
+    subhead={subhead}
+    heroImage="/images/app/es/dashboard.jpeg"
+    heroImageAlt="Pantalla principal de Corpus en iPhone con recuperación, sueño y esfuerzo"
+  />
+  <ProblemSolution locale={locale} />
+  <FeatureGrid locale={locale} />
+  <LifestyleBand photos={lifestyle} />
+  <HowItWorks locale={locale} />
+  <PrivacyCallout locale={locale} />
+  <FinalCta locale={locale} />
+</BaseLayout>

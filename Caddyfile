@@ -1,0 +1,45 @@
+{
+	# Behind a Cloudflare Tunnel; trust the tunnel for client IPs.
+	# (Adjust if you front this with anything else.)
+	servers {
+		trusted_proxies static private_ranges
+	}
+}
+
+:80 {
+	root * /srv
+
+	encode zstd gzip
+
+	# Long-cache hashed static assets.
+	@hashed path /_astro/* /images/icon/* /images/lifestyle/* /images/app/*
+	header @hashed Cache-Control "public, max-age=31536000, immutable"
+
+	# Short-cache HTML and llms.txt etc., so updates show up fast.
+	@html path *.html *.txt *.xml /sitemap-*.xml /robots.txt /llms*.txt /es/llms*.txt
+	header @html Cache-Control "public, max-age=300, s-maxage=300"
+
+	# Security & quality headers.
+	header X-Content-Type-Options "nosniff"
+	header Referrer-Policy "strict-origin-when-cross-origin"
+	header X-Frame-Options "DENY"
+	header Permissions-Policy "interest-cohort=(), browsing-topics=()"
+	header Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+	# Pretty URLs: try the file, then the directory's index, then 404.
+	try_files {path} {path}/ /404.html
+	file_server
+
+	# Custom 404.
+	handle_errors {
+		@404 expression {http.error.status_code} == 404
+		rewrite @404 /404.html
+		file_server
+	}
+
+	# Healthcheck endpoint for the tunnel/orchestrator.
+	respond /healthz 200 {
+		body "ok"
+		close
+	}
+}

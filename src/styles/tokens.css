@@ -1,0 +1,17 @@
+:root {
+  --bg-base: #000000;
+  --bg-elev-1: #0e0e10;
+  --bg-elev-2: #1a1a1d;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1a6;
+  --accent: #bf5af2;
+  --success: #30d158;
+  --warning: #ff9f0a;
+  --hairline: #2c2c2e;
+
+  --radius-card: 18px;
+  --radius-pill: 999px;
+
+  --font-sans: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", Menlo, monospace;
+}

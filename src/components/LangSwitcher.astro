@@ -1,0 +1,31 @@
+---
+import { locales, localeNames, type Locale, t } from "~/i18n/ui";
+import { stripLocale, withLocale } from "~/i18n/utils";
+
+interface Props {
+  current: Locale;
+  pathname: string;
+  class?: string;
+}
+const { current, pathname, class: className = "" } = Astro.props;
+const pathWithoutLocale = stripLocale(pathname);
+const strings = t(current);
+---
+<nav aria-label={strings.langSwitcher.label} class={`flex items-center gap-1 text-sm ${className}`}>
+  {locales.map((l) => (
+    <a
+      href={withLocale(l, pathWithoutLocale)}
+      aria-current={l === current ? "true" : undefined}
+      hreflang={l}
+      class:list={[
+        "rounded-pill px-3 py-1.5 transition",
+        l === current
+          ? "bg-bg-2 text-text-primary"
+          : "text-text-secondary hover:text-text-primary hover:bg-bg-1",
+      ]}
+    >
+      <span class="sr-only">{localeNames[l]}</span>
+      <span aria-hidden="true">{l.toUpperCase()}</span>
+    </a>
+  ))}
+</nav>

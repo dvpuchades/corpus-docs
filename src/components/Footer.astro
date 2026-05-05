@@ -1,0 +1,28 @@
+---
+import LangSwitcher from "./LangSwitcher.astro";
+import { t, type Locale } from "~/i18n/ui";
+import { CONTACT_EMAIL, withLocale } from "~/i18n/utils";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+const { locale, pathname } = Astro.props;
+const strings = t(locale);
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-hairline/70 mt-24">
+  <div class="mx-auto flex max-w-content flex-col gap-6 px-6 py-10 text-sm text-text-secondary sm:flex-row sm:items-center sm:justify-between sm:px-8">
+    <div class="flex items-center gap-2.5">
+      <img src="/images/icon/icon-32.png" width="24" height="24" alt="" class="rounded-[6px]" />
+      <span>© {year} Corpus · {strings.footer.rights}</span>
+    </div>
+
+    <nav class="flex flex-wrap items-center gap-x-5 gap-y-2">
+      <a href={withLocale(locale, "/docs")} class="hover:text-text-primary">{strings.footer.docs}</a>
+      <a href={withLocale(locale, "/privacy")} class="hover:text-text-primary">{strings.footer.privacy}</a>
+      <a href={`mailto:${CONTACT_EMAIL}`} class="hover:text-text-primary">{strings.footer.contact}</a>
+      <LangSwitcher current={locale} pathname={pathname} />
+    </nav>
+  </div>
+</footer>

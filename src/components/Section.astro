@@ -1,0 +1,18 @@
+---
+interface Props {
+  as?: string;
+  id?: string;
+  class?: string;
+  bleed?: boolean;
+}
+const { as: Tag = "section", id, class: className = "", bleed = false } = Astro.props;
+---
+<Tag id={id} class={`${bleed ? "" : "px-6 sm:px-8"} ${className}`}>
+  {bleed ? (
+    <slot />
+  ) : (
+    <div class="mx-auto max-w-content w-full">
+      <slot />
+    </div>
+  )}
+</Tag>

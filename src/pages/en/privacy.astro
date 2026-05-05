@@ -1,0 +1,55 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Section from "~/components/Section.astro";
+import { getEntry } from "astro:content";
+import { t } from "~/i18n/ui";
+import { SITE_URL } from "~/i18n/utils";
+
+const locale = "en" as const;
+const strings = t(locale);
+
+const entry = await getEntry("privacy", "en");
+if (!entry) throw new Error("Missing privacy/en entry");
+const { Content } = await entry.render();
+
+const updatedFmt = entry.data.updated.toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+const effectiveFmt = entry.data.effective.toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: entry.data.title,
+  description: entry.data.summary,
+  inLanguage: "en-US",
+  url: SITE_URL + "/en/privacy",
+  dateModified: entry.data.updated.toISOString(),
+};
+---
+<BaseLayout
+  locale={locale}
+  title={`${entry.data.title} — Corpus`}
+  description={entry.data.summary}
+  jsonLd={jsonLd}
+>
+  <Section class="pt-12 pb-20">
+    <h1 class="text-3xl font-semibold tracking-tight sm:text-4xl">{entry.data.title}</h1>
+    <p class="mt-4 max-w-2xl text-lg text-text-secondary leading-relaxed">{entry.data.summary}</p>
+    <p class="mt-3 text-xs uppercase tracking-[0.14em] text-text-secondary">
+      {strings.docs.lastUpdated} <time datetime={entry.data.updated.toISOString()}>{updatedFmt}</time>
+      · Effective <time datetime={entry.data.effective.toISOString()}>{effectiveFmt}</time>
+      · v{entry.data.version}
+    </p>
+    <hr class="my-8" />
+    <div class="prose-corpus">
+      <Content />
+    </div>
+  </Section>
+</BaseLayout>

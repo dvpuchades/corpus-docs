@@ -1,0 +1,31 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import Section from "~/components/Section.astro";
+import { withLocale } from "~/i18n/utils";
+import { t } from "~/i18n/ui";
+
+// Locale-agnostic 404 — defaults to EN copy with both CTAs.
+const locale = "en" as const;
+const strings = t(locale);
+---
+<BaseLayout
+  locale={locale}
+  title="Not found — Corpus"
+  description={strings.notFound.body}
+  noIndex
+  pathOverride="/404"
+>
+  <Section class="py-32 text-center">
+    <p class="text-xs uppercase tracking-[0.18em] text-accent/90">404</p>
+    <h1 class="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{strings.notFound.title}</h1>
+    <p class="mx-auto mt-4 max-w-lg text-text-secondary">{strings.notFound.body}</p>
+    <div class="mt-10 flex justify-center gap-3">
+      <a href={withLocale("en", "/")} class="rounded-pill border border-hairline px-5 py-2.5 text-sm hover:border-accent hover:text-accent">
+        {strings.notFound.cta} (EN)
+      </a>
+      <a href={withLocale("es", "/")} class="rounded-pill border border-hairline px-5 py-2.5 text-sm hover:border-accent hover:text-accent">
+        Volver al inicio (ES)
+      </a>
+    </div>
+  </Section>
+</BaseLayout>

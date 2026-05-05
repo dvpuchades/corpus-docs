@@ -1,0 +1,44 @@
+---
+import LangSwitcher from "./LangSwitcher.astro";
+import { t, type Locale } from "~/i18n/ui";
+import { withLocale } from "~/i18n/utils";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+const { locale, pathname } = Astro.props;
+const strings = t(locale);
+---
+<header class="sticky top-0 z-30 border-b border-hairline/60 bg-bg-base/85 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-content items-center justify-between gap-6 px-6 py-3 sm:px-8">
+    <a href={withLocale(locale, "/")} class="flex items-center gap-2.5 group" aria-label="Corpus home">
+      <img
+        src="/images/icon/icon-32.png"
+        srcset="/images/icon/icon-32.png 1x, /images/icon/icon-64.png 2x"
+        width="32"
+        height="32"
+        alt=""
+        class="rounded-[8px]"
+      />
+      <span class="font-semibold tracking-tight text-text-primary">Corpus</span>
+    </a>
+
+    <nav class="flex items-center gap-1 text-sm">
+      <a
+        href={withLocale(locale, "/docs")}
+        class="rounded-pill px-3 py-1.5 text-text-secondary transition hover:bg-bg-1 hover:text-text-primary"
+      >
+        {strings.nav.docs}
+      </a>
+      <a
+        href={withLocale(locale, "/privacy")}
+        class="rounded-pill px-3 py-1.5 text-text-secondary transition hover:bg-bg-1 hover:text-text-primary"
+      >
+        {strings.nav.privacy}
+      </a>
+      <span class="mx-2 hidden h-4 w-px bg-hairline sm:block" aria-hidden="true"></span>
+      <LangSwitcher current={locale} pathname={pathname} />
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,40 @@
+---
+// Root: client-side language detection redirect.
+// Caddy serves this static file; we use meta-refresh + JS to send Spanish browsers to /es/, others to /en/.
+const enUrl = "/en/";
+const esUrl = "/es/";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Corpus</title>
+    <meta name="description" content="The coach your Apple Watch was waiting for." />
+    <link rel="alternate" hreflang="en" href="https://corpus.dvpuchades.com/en/" />
+    <link rel="alternate" hreflang="es" href="https://corpus.dvpuchades.com/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://corpus.dvpuchades.com/en/" />
+    <link rel="canonical" href="https://corpus.dvpuchades.com/en/" />
+    <meta http-equiv="refresh" content={`0;url=${enUrl}`} />
+    <script is:inline>
+      (function () {
+        try {
+          var lang = (navigator.language || "en").toLowerCase();
+          var target = lang.indexOf("es") === 0 ? "/es/" : "/en/";
+          location.replace(target);
+        } catch (e) {
+          location.replace("/en/");
+        }
+      })();
+    </script>
+    <style>
+      body { background: #000; color: #fff; font-family: system-ui, -apple-system, sans-serif; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+      a { color: #BF5AF2; }
+    </style>
+  </head>
+  <body>
+    <p>
+      Redirecting to <a href={enUrl}>English</a> · <a href={esUrl}>Español</a>
+    </p>
+  </body>
+</html>

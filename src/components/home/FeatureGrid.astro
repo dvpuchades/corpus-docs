@@ -1,0 +1,116 @@
+---
+import Section from "~/components/Section.astro";
+import FeatureCard from "~/components/FeatureCard.astro";
+import type { Locale } from "~/i18n/ui";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+type Card = {
+  title: string;
+  body: string;
+  image?: string;
+  alt?: string;
+  icon?: "spark" | "lock" | "heart";
+};
+
+const screenshotDir = locale === "es" ? "/images/app/es" : "/images/app/en";
+
+const cards: Card[] = locale === "es"
+  ? [
+      {
+        title: "Recuperación, esfuerzo y readiness",
+        body: "Seis métricas diarias destiladas de tus datos de Apple Salud — con niveles claros, no números crípticos.",
+        image: `${screenshotDir}/dashboard.jpeg`,
+        alt: "Pantalla principal de Corpus mostrando recuperación, sueño y esfuerzo",
+      },
+      {
+        title: "Objetivos y plan semanal",
+        body: "Un plan periodizado para tu objetivo, que se reorganiza cuando la vida cambia. Marca un día como ocupado y la semana se reajusta sola.",
+        image: `${screenshotDir}/roadmap.jpeg`,
+        alt: "Roadmap semanal de entrenamientos en Corpus",
+      },
+      {
+        title: "Notas por voz, foto y texto",
+        body: "Apunta una comida con una foto, un audio rápido o una nota. Corpus extrae las etiquetas y descubre qué te afecta de verdad.",
+        image: `${screenshotDir}/chat.jpeg`,
+        alt: "Chat con el coach de Corpus",
+      },
+      {
+        title: "Sueño e insights personalizados",
+        body: "Profundo, REM, consistencia, deuda de sueño y siestas. Y un descubrimiento al día sobre lo que mueve tus números.",
+        image: `${screenshotDir}/insight.jpeg`,
+        alt: "Insight de sueño en Corpus",
+      },
+      {
+        title: "Hecho para Apple Salud",
+        body: "Lee lo que tu iPhone y tu Apple Watch ya registran. Funciona con balanzas inteligentes, datos de ciclo y mindfulness.",
+        icon: "heart",
+      },
+      {
+        title: "On-device, privado por diseño",
+        body: "Tus datos brutos nunca salen del iPhone. Solo un resumen estructurado del día se envía para generar el coaching.",
+        icon: "lock",
+      },
+    ]
+  : [
+      {
+        title: "Daily readiness & recovery",
+        body: "Six daily metrics distilled from your Apple Health data — with clear levels, not cryptic numbers.",
+        image: `${screenshotDir}/dashboard.jpeg`,
+        alt: "Corpus dashboard showing recovery, sleep and strain",
+      },
+      {
+        title: "Workout detail & insights",
+        body: "Heart-rate zones, pace splits, route maps and an AI insight about every session — what your effort meant for tomorrow.",
+        image: `${screenshotDir}/workout.jpeg`,
+        alt: "Workout detail in Corpus with heart-rate zones and pace splits",
+      },
+      {
+        title: "Voice and photo notes",
+        body: "Log a meal with a photo, a quick voice note, or a typed note. Corpus extracts the tags and discovers what actually moves your numbers.",
+        image: `${screenshotDir}/chat.jpeg`,
+        alt: "Chat with the Corpus coach",
+      },
+      {
+        title: "Goals & weekly roadmap",
+        body: "A periodized plan for your goal, that reshuffles when life changes. Mark a day as busy and the week reorganises itself.",
+        icon: "spark",
+      },
+      {
+        title: "Built for Apple Health",
+        body: "Reads what your iPhone and Apple Watch already track. Works with smart scales, cycle data and mindfulness sessions.",
+        icon: "heart",
+      },
+      {
+        title: "On-device, private by design",
+        body: "Your raw data never leaves your iPhone. Only a structured daily snapshot is sent to generate coaching.",
+        icon: "lock",
+      },
+    ];
+
+const eyebrow = locale === "es" ? "Qué hace Corpus" : "What Corpus does";
+const title = locale === "es"
+  ? "Tu cuerpo, traducido a métricas claras y un plan que reacciona."
+  : "Your body, translated into clear metrics and a plan that reacts.";
+---
+<Section class="py-20">
+  <p class="reveal text-xs uppercase tracking-[0.18em] text-accent/90">{eyebrow}</p>
+  <h2 class="reveal mt-3 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl" style="text-wrap: balance;">
+    {title}
+  </h2>
+
+  <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {cards.map((c) => (
+      <FeatureCard
+        title={c.title}
+        body={c.body}
+        image={c.image}
+        imageAlt={c.alt}
+        icon={c.icon}
+      />
+    ))}
+  </div>
+</Section>

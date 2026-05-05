@@ -1,0 +1,18 @@
+node_modules
+dist
+.astro
+.cache
+.DS_Store
+.git
+.gitignore
+.github
+.vscode
+README.md
+Dockerfile
+.dockerignore
+
+# Source-only assets — already processed into /public/images/
+images/
+content/
+developers/
+website-spec.md
