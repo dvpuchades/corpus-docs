@@ -12,7 +12,7 @@
 	encode zstd gzip
 
 	# Long-cache hashed static assets.
-	@hashed path /_astro/* /images/icon/* /images/lifestyle/* /images/app/*
+	@hashed path /_astro/* /images/icon/* /images/lifestyle/* /images/screenshots/*
 	header @hashed Cache-Control "public, max-age=31536000, immutable"
 
 	# Short-cache HTML and llms.txt etc., so updates show up fast.

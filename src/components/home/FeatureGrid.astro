@@ -17,32 +17,33 @@ type Card = {
   icon?: "spark" | "lock" | "heart";
 };
 
-const screenshotDir = locale === "es" ? "/images/app/es" : "/images/app/en";
+const screenshotDir =
+  locale === "es" ? "/images/screenshots/es" : "/images/screenshots/en";
 
 const cards: Card[] = locale === "es"
   ? [
       {
         title: "Seis métricas claras y un comentario que cambia con tu cuerpo",
         body: "Sueño, readiness, esfuerzo, estrés, recuperación y pasos — con niveles, no números crípticos. Y un comentario diario del coach que explica qué pasó esta noche.",
-        image: `${screenshotDir}/dashboard.jpeg`,
+        image: `${screenshotDir}/dashboard.PNG`,
         alt: "Pantalla principal de Corpus con el comentario del coach, las seis métricas y las notas del día",
       },
       {
         title: "Tu plan semanal, basado en tu objetivo",
         body: "Un plan periodizado que se reorganiza cuando la vida cambia. Cada día tiene su anillo: sueño, trabajo, hueco disponible y entrenamiento.",
-        image: `${screenshotDir}/roadmap.jpeg`,
+        image: `${screenshotDir}/roadmap.PNG`,
         alt: "Roadmap semanal en Corpus con anillos diarios para cada día",
       },
       {
         title: "Insights personalizados de tus hábitos",
         body: "Tras dos o tres semanas, Corpus encuentra los patrones reales en tus datos: qué afecta a tu sueño, a tu recuperación, a tu energía.",
-        image: `${screenshotDir}/insight.jpeg`,
+        image: `${screenshotDir}/insight.PNG`,
         alt: "Insight de sueño en Corpus mostrando patrones personalizados",
       },
       {
         title: "Pídele al coach que cambie tu plan",
         body: "El chat puede mover entrenamientos, ajustar la intensidad, replanificar tu semana o actualizar el objetivo. Sin salir de la conversación.",
-        image: `${screenshotDir}/chat.jpeg`,
+        image: `${screenshotDir}/chat.PNG`,
         alt: "Pantalla del chat de Corpus con sugerencias para preguntar al coach",
         imagePosition: "bottom",
       },
@@ -61,19 +62,19 @@ const cards: Card[] = locale === "es"
       {
         title: "Six clear metrics and a coach who reads them for you",
         body: "Sleep, readiness, strain, stress, recovery and steps — with levels, not cryptic numbers. Plus a daily coaching comment that explains what last night actually meant.",
-        image: `${screenshotDir}/dashboard.jpeg`,
+        image: `${screenshotDir}/dashboard.PNG`,
         alt: "Corpus dashboard showing the coach's daily comment, six metric tiles, and today's notes",
       },
       {
         title: "Goals and a weekly roadmap that adapts",
         body: "A periodized week shaped to your goal that reshuffles when life intervenes. Every day has its ring: sleep, work, free hours, training.",
-        image: `${screenshotDir}/week.jpeg`,
+        image: `${screenshotDir}/week.PNG`,
         alt: "Weekly view in Corpus with day rings for each day of the week",
       },
       {
         title: "Workout detail with an AI insight",
         body: "Heart-rate zones, splits, route — and a session-specific paragraph about what your effort meant for your goal and what to do next.",
-        image: `${screenshotDir}/swimming.jpeg`,
+        image: `${screenshotDir}/swimming.PNG`,
         alt: "Workout detail in Corpus with an AI-generated insight about a swim session",
       },
       {
