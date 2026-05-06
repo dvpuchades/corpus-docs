@@ -10,20 +10,20 @@ Corpus necesita tres cosas para ser útil: acceso a tus datos de Apple Salud, un
 
 ## 1. Instala y abre
 
-[Descarga Corpus desde el App Store.](https://apps.apple.com/app/id6761331575) Hace falta iOS 26.4 (la app usa APIs recientes de HealthKit que no están en versiones anteriores). Apple Watch Series 4 o posterior te da la imagen completa; con sólo iPhone también funciona, pero readiness y recuperación serán más toscas sin HRV ni frecuencia cardíaca continua.
+[Descarga Corpus desde el App Store.](https://apps.apple.com/app/id6761331575) Hace falta iOS 26.4 (la app usa APIs recientes de HealthKit que no están en versiones anteriores). Apple Watch Series 4 o posterior te da la imagen completa; con sólo iPhone también funciona, pero disposición y recuperación serán más toscas sin HRV ni frecuencia cardíaca continua.
 
 ## 2. Concede permisos de Salud
 
 Cuando abres Corpus por primera vez, iOS te pregunta qué categorías de Apple Salud quieres compartir. Corpus explica para qué sirve cada una en lenguaje natural — nada está oculto. Lo que Corpus lee:
 
-- **Frecuencia cardíaca y HRV** — para readiness, estrés y recuperación.
+- **Frecuencia cardíaca y HRV** — para disposición, estrés y recuperación.
 - **Fases de sueño** — para calidad de sueño, deuda y detección de siestas.
 - **Actividad y entrenamientos** — para esfuerzo y carga de entrenamiento.
 - **Frecuencia respiratoria, temperatura de muñeca, oxígeno en sangre** — cuando están disponibles, para señales más finas de recuperación.
 - **Movilidad** — velocidad al caminar y asimetría, captadas pasivamente por el iPhone.
-- **Composición corporal** — peso, % de grasa, masa magra — desde cualquier balanza inteligente que sincronice con Apple Salud.
+- **Composición corporal** — peso, % de grasa, masa magra — desde cualquier báscula inteligente que sincronice con Apple Salud.
 - **Mindfulness** — sesiones de meditación y respiración, para detección automática de hábitos.
-- **Ciclo menstrual** — datos de flujo, para considerar la fase del ciclo en recuperación y readiness.
+- **Ciclo menstrual** — datos de flujo, para considerar la fase del ciclo en recuperación y disposición.
 
 Puedes denegar lo que no quieras compartir y la app sigue funcionando — las señales que faltan simplemente no alimentan las métricas que habrían mejorado. Puedes cambiar los permisos después en *Ajustes → Salud → Apps*.
 

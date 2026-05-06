@@ -14,7 +14,7 @@ Your Apple Watch and iPhone quietly collect thousands of health signals every da
 
 - **Apple Fitness & Health** give you the data, but no plan.
 - **Whoop, Oura, Garmin Coach** give you a plan, but want a strap or a ring on top of your watch — and around €30 a month.
-- **Corpus** sits in the gap, at €3.99 a month — the price of a coffee in Ireland, or a breakfast deal in Spain. Your Apple Watch is already enough. Your iPhone is already enough.
+- **Corpus** sits in the gap, at €3.99 a month — the price of a coffee in Ireland. Your Apple Watch is already enough. Your iPhone is already enough.
 
 ## What you actually get
 

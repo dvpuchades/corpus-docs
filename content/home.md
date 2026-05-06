@@ -34,7 +34,7 @@ sections:
 privacy:
   icon: "🔒"
   title: Your data stays yours
-  body: "Your raw health data never leaves your device. Corpus processes everything locally and only sends a structured daily summary — no raw biometrics — to generate your coaching insights over an encrypted connection. No accounts required. No social features. No third-party analytics."
+  body: "Your device is the only place your health data lives — nothing is stored on our servers. Corpus processes your data locally and sends only what the coach needs to answer a request over an encrypted connection, with nothing retained beyond that single request. No accounts required. No social features. No third-party analytics."
 
 cta:
   title: Get started
@@ -126,7 +126,7 @@ Log what you eat, drink, and do — and Corpus connects the dots. Discover that 
 
 ## Your data stays yours
 
-Your raw health data never leaves your device. Corpus processes everything locally and only sends a structured daily summary — no raw biometrics — to generate your coaching insights over an encrypted connection. No accounts required. No social features. No third-party analytics.
+Your device is the only place your health data lives — nothing is stored on our servers. Corpus processes your data locally and sends only what the coach needs to answer a request over an encrypted connection, with nothing retained beyond that single request. No accounts required. No social features. No third-party analytics.
 
 [Learn more about our privacy approach →](/privacy)
 

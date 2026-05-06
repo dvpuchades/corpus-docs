@@ -44,7 +44,7 @@ No hace falta borrarlo todo para quitar una sola cosa.
 
 ## Lo que no hace falta borrar en servidor
 
-No hay copia en servidor de tus datos de salud, tus hábitos, tus insights, tu plan ni tu historial del chat. Lo único que toca un servidor brevemente es el resumen estructurado del día que se envía al servicio de IA para generar el coaching — y se procesa de forma transitoria durante la duración de la petición. No hay nada que borrar ahí porque no se retiene nada ahí.
+No hay copia en servidor de tus datos de salud, tus hábitos, tus insights, tu plan ni tu historial del chat. Cualquier cosa que se envíe al servicio de IA para generar el coaching — el resumen del día, o el detalle adicional que el coach pide bajo demanda para responder a una pregunta concreta — se procesa de forma transitoria durante la duración de esa única petición. No hay nada que borrar ahí porque no se retiene nada ahí.
 
 ## Dudas
 

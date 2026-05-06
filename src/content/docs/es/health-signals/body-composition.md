@@ -1,25 +1,25 @@
 ---
 title: Composición corporal
-summary: Si tienes una balanza inteligente que sincroniza con Apple Salud, Corpus lee peso, % de grasa y masa magra en tendencias de 90 días, deriva BMR/TDEE y detecta la recomposición automáticamente.
+summary: Si tienes una báscula inteligente que sincroniza con Apple Salud, Corpus lee peso, % de grasa y masa magra en tendencias de 90 días, deriva BMR/TDEE y detecta la recomposición automáticamente.
 section: health-signals
 order: 3
 updated: 2026-05-05
 ---
 
-Si tienes una balanza inteligente que sincroniza con Apple Salud, Corpus trae la composición corporal a la imagen — junto a las seis métricas diarias, en la pantalla principal y dentro del contexto del coach.
+Si tienes una báscula inteligente que sincroniza con Apple Salud, Corpus trae la composición corporal a la imagen — junto a las seis métricas diarias, en la pantalla principal y dentro del contexto del coach.
 
 ## Lo que necesitas
 
-Cualquier balanza inteligente que escriba peso, % de grasa y masa magra en Apple Salud sirve — Withings, Garmin, Eufy, RENPHO y similares lo hacen. Corpus no necesita una integración directa con el fabricante; lee desde HealthKit.
+Cualquier báscula inteligente que escriba peso, % de grasa y masa magra en Apple Salud sirve — Withings, Garmin, Eufy, RENPHO y similares lo hacen. Corpus no necesita una integración directa con el fabricante; lee desde HealthKit.
 
-Si sólo tienes peso (las balanzas básicas), Corpus muestra la tendencia de peso — pero la señal de recomposición necesita grasa y masa magra.
+Si sólo tienes peso (las básculas básicas), Corpus muestra la tendencia de peso — pero la señal de recomposición necesita grasa y masa magra.
 
 ## Lo que vas a ver
 
 - **Lectura de hoy** — peso, % de grasa, masa magra.
 - **Gráficos de 90 días** — diagramas de dispersión de cada lectura más una línea de tendencia suavizada para cada uno de los tres. La dispersión es deliberada; ves el ruido además de la tendencia, que es la única forma honesta de leer datos de composición corporal.
 - **Métricas derivadas** — tasa metabólica basal estimada (BMR), gasto energético total estimado (TDEE) usando tu esfuerzo, y balance energético.
-- **Bandera de recomposición** — cuando el % de grasa baja y el peso se mantiene aproximadamente estable, estás perdiendo grasa y ganando músculo a la vez. Es el progreso que un solo número en la balanza pasaría por alto; Corpus lo destaca en el comentario del coach.
+- **Bandera de recomposición** — cuando el % de grasa baja y el peso se mantiene aproximadamente estable, estás perdiendo grasa y ganando músculo a la vez. Es el progreso que un solo número en la báscula pasaría por alto; Corpus lo destaca en el comentario del coach.
 
 ## Frescura
 

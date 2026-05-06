@@ -1,6 +1,6 @@
 ---
 title: Qué es Corpus
-summary: Corpus es un entrenador para iOS que convierte los datos que tu iPhone y tu Apple Watch ya recogen en un plan diario hecho a tu medida — seis métricas claras, entrenamiento periodizado e insights basados en tus hábitos — por 3,99 € al mes, sin hardware extra.
+summary: Corpus es un entrenador para iOS que convierte los datos que tu iPhone y tu Apple Watch ya recogen en un plan diario hecho a tu medida — seis métricas claras, entrenamiento por fases e insights basados en tus hábitos — por 3,99 € al mes, sin hardware extra.
 section: getting-started
 order: 1
 updated: 2026-05-05
@@ -14,15 +14,15 @@ Tu Apple Watch y tu iPhone recogen, en silencio, miles de señales de salud cada
 
 - **Apple Fitness y Salud** te dan los datos, pero no el plan.
 - **Whoop, Oura, Garmin Coach** te dan el plan, pero quieren una pulsera o un anillo encima de tu reloj — y unos 30 €/mes.
-- **Corpus** se mete en ese hueco, a 3,99 € al mes — lo que cuesta un café en Irlanda, o un desayuno en España. Tu Apple Watch ya es suficiente. Tu iPhone ya es suficiente.
+- **Corpus** se mete en ese hueco, a 3,99 € al mes — por lo que cuesta un café y una tostada. Tu Apple Watch ya es suficiente. Tu iPhone ya es suficiente.
 
 ## Lo que recibes
 
-- Seis métricas diarias: **sueño, readiness, esfuerzo, estrés, recuperación y pasos** — cada una con un nivel claro (por ejemplo, "Recuperación: Recuperándote") y la tendencia.
-- **Composición corporal** si tienes una balanza inteligente que sincronice con Apple Salud.
+- Seis métricas diarias: **sueño, disposición, esfuerzo, estrés, recuperación y pasos** — cada una con un nivel claro (por ejemplo, "Recuperación: Recuperándote") y la tendencia.
+- **Composición corporal** si tienes una báscula inteligente que sincronice con Apple Salud.
 - Un **plan semanal de entrenamiento** construido en torno a tu objetivo — una maratón, una recomposición, dormir mejor — y que se reorganiza cuando la vida cambia.
 - Un **entrenador en el chat** que conoce tus datos, tu plan y tu historial, y puede modificarlos cuando se lo pidas.
-- **Insights personalizados** que encuentran los patrones en los hábitos que registras — qué mueve de verdad tu sueño, tu recuperación o tu readiness.
+- **Insights personalizados** que encuentran los patrones en los hábitos que registras — qué mueve de verdad tu sueño, tu recuperación o tu disposición.
 
 ## Para quién es
 

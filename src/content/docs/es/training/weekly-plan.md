@@ -1,6 +1,6 @@
 ---
 title: El plan semanal
-summary: Una semana periodizada de entrenamiento construida en torno a tu objetivo, tu recuperación y tu agenda real. Marca un día como ocupado y el plan se reorganiza. Pídele al coach del chat que cambie una sesión y la cambia.
+summary: Una semana de entrenamiento por fases construida en torno a tu objetivo, tu recuperación y tu agenda real. Marca un día como ocupado y el plan se reorganiza. Pídele al coach del chat que cambie una sesión y la cambia.
 section: training
 order: 1
 updated: 2026-05-05
@@ -13,7 +13,7 @@ La vista de semana es donde vive el plan. Los días pasados muestran un breve re
 Corpus lee tres cosas para decidir cómo es cada día:
 
 1. **Qué necesita el objetivo de esta semana.** Una semana de carga de maratón no se parece a una de descarga, ni a una semana de recomposición.
-2. **Cómo de recuperado estás.** Readiness y recuperación de los últimos días empujan la intensidad arriba o abajo.
+2. **Cómo de recuperado estás.** Disposición y recuperación de los últimos días empujan la intensidad arriba o abajo.
 3. **Cómo es tu día de verdad.** Bloques de sueño, bloques de trabajo, lo que hayas marcado como ocupado. Las sesiones se colocan en los huecos.
 
 El resultado es una semana de sesiones que caben, con la intensidad calibrada a donde estás ahora — no donde el manual dice que debería estar la semana 15 de un bloque de maratón.

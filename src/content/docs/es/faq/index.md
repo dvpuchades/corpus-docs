@@ -1,6 +1,6 @@
 ---
 title: Preguntas frecuentes
-summary: Respuestas rápidas a lo que la gente pregunta más — cuánto cuesta Corpus, qué hardware necesitas, cómo funciona el coach del chat, qué hace Corpus con tus datos, balanzas inteligentes, ciclo, carga mental y cuánto tarda en aparecer el primer insight.
+summary: Respuestas rápidas a lo que la gente pregunta más — cuánto cuesta Corpus, qué hardware necesitas, cómo funciona el coach del chat, qué hace Corpus con tus datos, básculas inteligentes, ciclo, carga mental y cuánto tarda en aparecer el primer insight.
 section: faq
 order: 1
 updated: 2026-05-05
@@ -8,11 +8,11 @@ updated: 2026-05-05
 
 ## ¿Cuánto cuesta Corpus?
 
-**3,99 € al mes** — lo que cuesta un café en Irlanda, o un desayuno en España. No hay versión gratuita; todo lo que ves en la app — el coaching diario, los insights personalizados, el chat, el plan semanal — está incluido en esa única suscripción. Sin compras dentro de la app, sin extras.
+**3,99 € al mes** — por lo que cuesta un café y una tostada. No hay versión gratuita; todo lo que ves en la app — el coaching diario, los insights personalizados, el chat, el plan semanal — está incluido en esa única suscripción. Sin compras dentro de la app, sin extras.
 
 ## ¿Necesito Apple Watch?
 
-Puedes instalar Corpus sólo con iPhone, pero el Apple Watch es lo que te da la imagen completa. Sin él tendrás ventanas de sueño, pasos y datos de balanza inteligente, pero pierdes la frecuencia cardíaca continua, el HRV, la fase de sueño y la mayor parte del detalle de los entrenamientos — lo que significa readiness, recuperación y estrés más toscos. Apple Watch Series 4 o posterior es el mínimo recomendado.
+Puedes instalar Corpus sólo con iPhone, pero el Apple Watch es lo que te da la imagen completa. Sin él tendrás ventanas de sueño, pasos y datos de báscula inteligente, pero pierdes la frecuencia cardíaca continua, el HRV, la fase de sueño y la mayor parte del detalle de los entrenamientos — lo que significa disposición, recuperación y estrés más toscos. Apple Watch Series 4 o posterior es el mínimo recomendado.
 
 ## ¿Sustituye Corpus a Whoop, Oura o Garmin Coach?
 
@@ -33,23 +33,23 @@ El coach mira los datos relevantes, hace los cambios y te dice qué hizo. No hac
 
 ## ¿Qué sabe el coach sobre mí?
 
-Tiene acceso a: tus seis métricas diarias y su historial, tus objetivos activos, tu plan semanal, tu resumen del plan, tus registros de hábitos, tus respuestas del check-in, tus insights personalizados activos, tu carga de entrenamiento, tu composición corporal (si aplica) y el historial del chat de la conversación actual. *No* ve series temporales biométricas brutas — esas se quedan en tu dispositivo. Mira [Dónde están tus datos](/es/docs/privacy-control/where-your-data-lives) para el desglose completo.
+Tiene acceso a: tus seis métricas diarias y su historial, tus objetivos activos, tu plan semanal, tu resumen del plan, tus registros de hábitos, tus respuestas del check-in, tus insights personalizados activos, tu carga de entrenamiento, tu composición corporal (si aplica) y el historial del chat de la conversación actual. Cuando necesita más detalle para responder a una pregunta concreta — por ejemplo, la traza de frecuencia cardíaca de un entrenamiento o las fases de sueño de una noche concreta — puede pedirlo a tu dispositivo bajo demanda. Nada se guarda en servidor. Mira [Dónde están tus datos](/es/docs/privacy-control/where-your-data-lives) para el desglose completo.
 
-## ¿Funciona Corpus con balanzas inteligentes?
+## ¿Funciona Corpus con básculas inteligentes?
 
-Sí. Cualquier balanza inteligente que sincronice peso, % de grasa y masa magra con Apple Salud sirve — Withings, Garmin, Eufy, RENPHO y similares. Corpus lee desde HealthKit, no necesita una integración específica del fabricante. Con grasa y masa magra obtienes además métricas derivadas (BMR, TDEE) y detección automática de recomposición. Mira [Composición corporal](/es/docs/health-signals/body-composition).
+Sí. Cualquier báscula inteligente que sincronice peso, % de grasa y masa magra con Apple Salud sirve — Withings, Garmin, Eufy, RENPHO y similares. Corpus lee desde HealthKit, no necesita una integración específica del fabricante. Con grasa y masa magra obtienes además métricas derivadas (BMR, TDEE) y detección automática de recomposición. Mira [Composición corporal](/es/docs/health-signals/body-composition).
 
 ## ¿Soporta el ciclo menstrual?
 
-Sí. Los datos del ciclo se leen automáticamente de Apple Salud si los registras (o lo hace una app conectada). Corpus tiene en cuenta la **fase del ciclo** en recuperación y readiness — para que el motor no lea una caída de HRV en fase lútea como enfermedad o sobreentrenamiento, y el plan respete los ritmos que de verdad importan en tu entrenamiento. Ningún dato del ciclo sale del dispositivo más allá del mismo resumen anonimizado del día que se usa para todo lo demás.
+Sí. Los datos del ciclo se leen automáticamente de Apple Salud si los registras (o lo hace una app conectada). Corpus tiene en cuenta la **fase del ciclo** en recuperación y disposición — para que el motor no lea una caída de HRV en fase lútea como enfermedad o sobreentrenamiento, y el plan respete los ritmos que de verdad importan en tu entrenamiento. Los datos del ciclo se tratan como cualquier otra categoría: se guardan en tu dispositivo, se envían a la IA sólo como parte del mismo flujo de peticiones bajo demanda que el resto de tus datos, y nunca se retienen en servidor.
 
 ## ¿Por qué importa la recuperación tanto como entrenar?
 
 Porque la adaptación ocurre durante la recuperación, no durante el entrenamiento. La sesión es el estímulo; el descanso es lo que te hace más fuerte, más rápido o más fino. Un plan que mete sesiones duras a un cuerpo que aún se recupera no te pone en forma — te aplana, te lesiona o te quema. Corpus pondera el estado de recuperación en cada decisión del plan por eso.
 
-## ¿El estrés y el ánimo afectan a mi readiness?
+## ¿El estrés y el ánimo afectan a mi disposición?
 
-Sí — y es algo que mucha gente pasa por alto. El estrés en Corpus es **fisiológico**: se lee desde tendencias de HRV, frecuencia cardíaca en reposo, arquitectura del sueño y el sistema nervioso autónomo. La carga mental y emocional aparece ahí con sorprendente fidelidad. Una mala semana en el trabajo puede arrastrar readiness y recuperación hacia abajo aun sin entrenamiento extra. El coach lee la señal y se ajusta; si registras "estrés laboral alto" en el check-in, tiene el contexto para explicar *por qué* bajó la readiness.
+Sí — y es algo que mucha gente pasa por alto. El estrés en Corpus es **fisiológico**: se lee desde tendencias de HRV, frecuencia cardíaca en reposo, arquitectura del sueño y el sistema nervioso autónomo. La carga mental y emocional aparece ahí con sorprendente fidelidad. Una mala semana en el trabajo puede arrastrar disposición y recuperación hacia abajo aun sin entrenamiento extra. El coach lee la señal y se ajusta; si registras "estrés laboral alto" en el check-in, tiene el contexto para explicar *por qué* bajó la disposición.
 
 ## ¿Para qué son las "notas de hoy" exactamente?
 
@@ -61,7 +61,7 @@ Unas **dos a tres semanas** de registro constante. El motor necesita suficientes
 
 ## ¿Mis datos salen de mi dispositivo?
 
-Datos biométricos brutos: no. Un resumen estructurado y anonimizado del día (niveles de métricas, no medidas brutas, más tus notas y objetivos) se envía por HTTPS para generar el coaching, y no se guarda en servidor más allá de esa única petición. Mira la [política de privacidad](/es/privacy) para la descripción completa.
+Tu dispositivo es el único sitio donde se almacenan tus datos — nada queda en servidor. Para generar el coaching, Corpus envía datos al servicio de IA por HTTPS bajo demanda: por defecto un resumen estructurado del día (niveles de métricas, historial reciente, tus notas y objetivos), y cuando el coach necesita más detalle para responder a una pregunta concreta, datos adicionales que se piden a tu dispositivo sólo para esa petición. Nada se retiene más allá de la duración de cada petición. Mira la [política de privacidad](/es/privacy) para la descripción completa.
 
 ## ¿Cómo borro mis datos?
 

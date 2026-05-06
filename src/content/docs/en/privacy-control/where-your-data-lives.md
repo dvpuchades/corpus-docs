@@ -1,6 +1,6 @@
 ---
 title: Where your data lives
-summary: Raw health data never leaves your iPhone. Only a structured, anonymised daily summary — levels, not biometrics — is sent to generate coaching, over an encrypted connection, with nothing stored on a server.
+summary: Your iPhone is the only place your health data lives — nothing is stored on a server. Corpus sends a structured daily summary to the AI for coaching, and pulls more detail on demand only when the coach needs it.
 section: privacy
 order: 1
 updated: 2026-05-05
@@ -20,24 +20,19 @@ This is the short version. The [privacy policy](/en/privacy) is the long, legall
 
 Corpus has no servers that store any of this. It's processed on your iPhone, stored on your iPhone, and stays there.
 
-## What is sent (and what isn't)
+## What is sent (and when)
 
-To generate your coaching, training plans, and chat replies, Corpus sends a **structured daily summary** to a hosted AI service over HTTPS. That summary contains:
+To generate your coaching, training plans, and chat replies, Corpus sends data to a hosted AI service over HTTPS — on demand, only when there's a request to answer. By default that's a **structured daily summary** containing:
 
-- **Metric levels** — *"Sleep: Fair"*, *"Readiness: Good"* — not the raw measurements behind them.
-- A **7-day history** of metric states and logged behaviours.
+- **Metric levels** — *"Sleep: Fair"*, *"Readiness: Good"*.
+- A **recent history** of metric states and logged behaviours.
 - Your **goals**, profile summary, and current training plan.
 - Your **notes and check-in answers** (text only).
 - **Chat messages** during a coaching conversation.
 
-What is **not** sent:
+When the coach needs more detail to answer a specific question or produce a better insight — *"why was my deep sleep low last night?"*, *"what happened in my heart rate during that interval session?"* — it can pull additional data from your device on demand: a workout's heart-rate trace, a night's sleep stages, a longer history window. Only the data needed for that particular request is sent, and only at the moment it's needed.
 
-- Raw heart rate, HRV, or other biometric time-series data.
-- Sleep-stage breakdowns or raw sleep data.
-- GPS routes or detailed workout streams.
-- Photos beyond the moment of analysis (see below).
-
-The AI service processes the summary in real time and returns a response. **No biometric data is stored on any server beyond the lifetime of that single request.**
+The AI service processes whatever it receives in real time and returns a response. **Nothing is stored on any server beyond the lifetime of that single request.** The data is sent, used, and discarded — the only persistent copy stays on your iPhone.
 
 ## Photo handling
 
@@ -52,4 +47,4 @@ When you take a photo for behaviour logging, the image is sent to the AI service
 
 ## Why we built it this way
 
-Corpus exists to help you understand your body. That mission only works if you trust us with the data — so the architecture is the simplest possible answer to "how do you minimise the risk?" The answer was: don't move the raw data, don't store anything on a server, send only what's strictly necessary for the model to give you useful coaching. The rest follows.
+Corpus exists to help you understand your body. That mission only works if you trust us with the data — so the architecture is the simplest possible answer to "how do you minimise the risk?" The answer was: keep your device as the only persistent home for the data, don't store anything on a server, and only send what's needed at the moment the coach actually needs it. The rest follows.

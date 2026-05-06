@@ -42,7 +42,7 @@ Corpus is for anyone who wants to understand their body better:
 
 **Learns your body.** Corpus doesn't apply generic advice. It discovers your personal patterns — what affects *your* sleep, *your* recovery, *your* readiness — and coaches you accordingly.
 
-**Privacy-first.** All raw health data stays on your device. Only a structured daily summary is sent for coaching — over an encrypted connection, with no raw biometrics included.
+**Privacy-first.** Your device is the only place your health data lives — nothing is stored on a server. The AI coach only sees what it needs to answer a request, sent over an encrypted connection and discarded after the response.
 
 ## Getting Started
 

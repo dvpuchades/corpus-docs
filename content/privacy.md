@@ -17,7 +17,7 @@ Corpus exists to help you understand your body. That mission only works if you t
 
 Here are four commitments we make to every user:
 
-1. **Your raw health data never leaves your device.**
+1. **Your health data lives on your device — nothing is stored on our servers.**
 2. **We don't sell, share, or monetize your data.**
 3. **No account is required to use Corpus.**
 4. **You can delete everything at any time.**
@@ -50,9 +50,9 @@ With your permission, Corpus reads the following categories from Apple Health on
 
 ---
 
-## What Stays on Your Device
+## Where Your Data Lives
 
-**All of it.** Specifically:
+**Your device is the only place your data is stored.** Specifically:
 
 - All raw health data read from Apple Health
 - Your health metrics and their history
@@ -61,28 +61,23 @@ With your permission, Corpus reads the following categories from Apple Health on
 - Your goals, profile, and preferences
 - Your chat history
 
-Corpus processes your health data locally on your device to generate your daily metrics. Nothing is stored on our servers.
+Corpus processes your health data locally on your device to generate your daily metrics. **Nothing is stored on our servers.**
 
 ---
 
 ## What Is Sent to the AI Service
 
-To generate your coaching, training plans, and chat responses, Corpus sends a **structured daily summary** to a secure AI service over an encrypted (HTTPS) connection. This summary includes:
+To generate your coaching, training plans, and chat responses, Corpus sends data to a secure AI service over an encrypted (HTTPS) connection — on demand, only when there's a request to answer. By default that's a **structured daily summary** containing:
 
-- Your metric levels (e.g. "Sleep: Fair", "Readiness: Good") — not the raw measurements behind them
-- A 7-day history of metric states and logged behaviours
+- Your metric levels (e.g. "Sleep: Fair", "Readiness: Good")
+- A recent history of metric states and logged behaviours
 - Your goals, profile summary, and current training plan
 - Your notes and check-in answers (text only)
 - Chat messages during a coaching conversation
 
-**What is NOT sent:**
+When the coach needs more detail to answer a specific question or produce a better insight, it can pull additional data from your device on demand — for example, a workout's heart-rate trace, a night's sleep stages, or a longer history window. Only the data needed for that particular request is sent, and only at the moment it's needed.
 
-- Raw heart rate, HRV, or other biometric time-series data
-- Sleep stage breakdowns or raw sleep data
-- GPS routes or detailed workout streams
-- Photos (see below)
-
-The AI service processes your summary in real time to generate a response. No biometric data is stored on any server beyond the lifetime of that single request.
+The AI service processes whatever it receives in real time to generate a response. **Nothing is stored on any server beyond the lifetime of that single request** — the data is sent, used, and discarded. The only persistent copy stays on your device.
 
 ---
 

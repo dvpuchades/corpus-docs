@@ -11,14 +11,14 @@ const { locale } = Astro.props;
 const copy = locale === "es"
   ? {
       eyebrow: "Privacidad",
-      title: "Tus datos de salud no salen de tu dispositivo.",
-      body: "Solo se envía un resumen anonimizado del día — no tus biométricos en bruto — para generar el coaching. Sin cuentas, sin redes, sin analíticas de terceros.",
+      title: "Tu dispositivo es el único sitio donde viven tus datos.",
+      body: "Nada se guarda en servidor. Cuando el coach necesita datos para responder, los pide bajo demanda y se descartan tras la respuesta. Sin cuentas, sin redes, sin analíticas de terceros.",
       cta: "Lee la política de privacidad",
     }
   : {
       eyebrow: "Privacy",
-      title: "Your health data never leaves your device.",
-      body: "Only an anonymised daily snapshot — not your raw biometrics — is sent to generate coaching. No accounts, no social, no third-party analytics.",
+      title: "Your device is the only place your data lives.",
+      body: "Nothing is stored on a server. When the coach needs data to answer, it's pulled on demand and discarded after the response. No accounts, no social, no third-party analytics.",
       cta: "Read the privacy policy",
     };
 ---

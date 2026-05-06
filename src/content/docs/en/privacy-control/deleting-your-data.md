@@ -44,7 +44,7 @@ You don't have to wipe everything to remove one thing.
 
 ## What we don't have to delete on a server
 
-There's no server-side copy of your health data, your behaviours, your insights, your plan, or your chat history. The only thing that briefly touches a server is the structured daily summary that's sent to the AI service to generate coaching — and that's processed transiently for the lifetime of the request only. There is nothing to delete there because nothing is retained there.
+There's no server-side copy of your health data, your behaviours, your insights, your plan, or your chat history. Anything sent to the AI service to generate coaching — the daily summary, or extra detail the coach pulls on demand to answer a specific question — is processed transiently for the lifetime of that single request only. There is nothing to delete there because nothing is retained there.
 
 ## Questions
 

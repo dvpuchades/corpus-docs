@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-summary: Corpus is built so your raw health data never leaves your device. Only an anonymised structured summary is sent to generate coaching, with no third-party analytics, no account required, and full deletion under your control.
+summary: Corpus keeps your health data on your device as the only source of truth — nothing is stored on a server. The AI coach pulls only what it needs to generate useful coaching, with no third-party analytics, no account required, and full deletion under your control.
 version: federer-2001
 effective: 2026-05-05
 updated: 2026-05-05
@@ -12,7 +12,7 @@ Corpus exists to help you understand your body. That mission only works if you t
 
 Four commitments we make to every user:
 
-1. Your raw health data never leaves your device.
+1. Your health data lives on your device — nothing is stored on our servers.
 2. We don't sell, share, or monetise your data.
 3. No account is required to use Corpus.
 4. You can delete everything at any time.
@@ -47,7 +47,7 @@ With your permission, Corpus reads the following categories from Apple Health on
 
 ## Where your data is stored
 
-**All of it stays on your device.** Specifically:
+**Your device is the only place your data lives.** Specifically:
 
 - All raw health data read from Apple Health.
 - Your computed health metrics and their history.
@@ -55,32 +55,27 @@ With your permission, Corpus reads the following categories from Apple Health on
 - Your personalised insights and the correlations behind them.
 - Your goals, profile, plan summary, and chat history.
 
-Corpus processes your health data locally on your device to generate your daily metrics. Nothing is stored on our servers.
+Corpus processes your health data locally on your device to generate your daily metrics. **Nothing is stored on our servers.**
 
 ## Third parties
 
-Corpus uses **Anthropic** (Claude API) as the AI service that generates coaching responses, training plans, and chat replies. Anthropic processes the structured daily summary described in *§ What is sent to the AI service* in real time and does not retain biometric data beyond the lifetime of that single request.
+Corpus uses **Anthropic** (Claude API) as the AI service that generates coaching responses, training plans, and chat replies. Anthropic processes the data described in *§ What is sent to the AI service* in real time and does not retain it beyond the lifetime of that single request.
 
 Corpus does **not** use any third-party analytics, advertising, or tracking SDKs.
 
 ## What is sent to the AI service
 
-To generate your coaching, training plans, and chat responses, Corpus sends a **structured daily summary** to the AI service over an encrypted (HTTPS) connection. This summary includes:
+To generate your coaching, training plans, and chat responses, Corpus sends data to the AI service on demand over an encrypted (HTTPS) connection. By default this is a **structured daily summary**, which includes:
 
-- Your metric *levels* (e.g. "Sleep: Fair", "Readiness: Good") — not the raw measurements behind them.
-- A 7-day history of metric states and logged behaviours.
+- Your metric *levels* (e.g. "Sleep: Fair", "Readiness: Good").
+- A recent history of metric states and logged behaviours.
 - Your goals, profile summary, and current training plan.
 - Your notes and check-in answers (text only).
 - Chat messages during a coaching conversation.
 
-What is **not** sent:
+When the coach needs more detail to answer a specific question or produce a better insight, it can pull additional data from your device on demand — for example, a workout's heart-rate trace, a night's sleep stages, or a longer history window. Only the data needed for that request is sent, and only at the moment it is needed.
 
-- Raw heart rate, HRV, or other biometric time-series data.
-- Sleep stage breakdowns or raw sleep data.
-- GPS routes or detailed workout streams.
-- Photos, beyond the moment of analysis (see below).
-
-The AI service processes your summary in real time to generate a response. **No biometric data is stored on any server beyond the lifetime of that single request.**
+The AI service processes whatever it receives in real time to generate a response. **Nothing is stored on any server beyond the lifetime of that single request** — the data is sent, used, and discarded. The only persistent copy stays on your device.
 
 ## Photo processing
 

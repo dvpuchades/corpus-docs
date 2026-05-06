@@ -8,7 +8,7 @@ updated: 2026-05-05
 
 ## How much does Corpus cost?
 
-**€3.99 a month** — the price of a coffee in Ireland, or a breakfast deal in Spain. There's no free tier; everything in the app — the daily coaching, the personalised insights, the chat, the weekly plan — is included in that single subscription. No in-app purchases, no upsells.
+**€3.99 a month** — the price of a coffee in Ireland. There's no free tier; everything in the app — the daily coaching, the personalised insights, the chat, the weekly plan — is included in that single subscription. No in-app purchases, no upsells.
 
 ## Do I need an Apple Watch?
 
@@ -33,7 +33,7 @@ The coach looks up the relevant data, makes the changes, and tells you what it d
 
 ## What does the coach actually know about me?
 
-It has access to: your six daily metrics and their history, your active goals, your weekly plan, your plan summary, your behaviour logs, your check-in answers, your active personalised insights, your training load, your body composition (if applicable), and the chat history of the current conversation. It does *not* see raw biometric time series — those stay on your device. See [Where your data lives](/en/docs/privacy-control/where-your-data-lives) for the full breakdown.
+It has access to: your six daily metrics and their history, your active goals, your weekly plan, your plan summary, your behaviour logs, your check-in answers, your active personalised insights, your training load, your body composition (if applicable), and the chat history of the current conversation. When it needs more detail to answer a specific question — say, the heart-rate trace of a workout or the sleep stages of a particular night — it can pull that from your device on demand. Nothing is stored on a server. See [Where your data lives](/en/docs/privacy-control/where-your-data-lives) for the full breakdown.
 
 ## Does Corpus work with smart scales?
 
@@ -41,7 +41,7 @@ Yes. Any smart scale that syncs weight, body fat percentage and lean mass to App
 
 ## Does Corpus support menstrual cycle tracking?
 
-Yes. Cycle data is read automatically from Apple Health if you log it (or a connected app does). Corpus factors **cycle phase** into recovery and readiness — so the engine doesn't read a luteal-phase HRV dip as illness or overtraining, and the plan respects the rhythms that actually matter for your training. None of the cycle data is sent off-device beyond the same anonymised daily summary used for everything else.
+Yes. Cycle data is read automatically from Apple Health if you log it (or a connected app does). Corpus factors **cycle phase** into recovery and readiness — so the engine doesn't read a luteal-phase HRV dip as illness or overtraining, and the plan respects the rhythms that actually matter for your training. Cycle data is treated like every other category: stored on your device, sent to the AI only as part of the same on-demand request flow used for the rest of your data, and never retained on a server.
 
 ## Why does recovery matter as much as training?
 
@@ -61,7 +61,7 @@ About **two to three weeks** of consistent logging. The engine needs enough days
 
 ## Does my data leave my device?
 
-Raw biometric data: no. A structured, anonymised daily summary (metric *levels*, not raw numbers, plus your notes and goals) is sent over HTTPS to generate coaching, and is not stored on any server beyond that single request. See [the privacy policy](/en/privacy) for the full description.
+Your device is the only place your data is stored — nothing is kept on a server. To generate coaching, Corpus sends data to the AI service over HTTPS on demand: by default a structured daily summary (metric levels, recent history, your notes and goals), and when the coach needs more detail to answer a specific question, additional data pulled from your device for that single request only. Nothing is retained beyond the lifetime of each request. See [the privacy policy](/en/privacy) for the full description.
 
 ## How do I delete my data?
 

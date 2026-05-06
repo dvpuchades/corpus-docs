@@ -27,7 +27,7 @@ Para objetivos con fecha, Corpus periodiza:
 - **Taper** — las últimas 1–3 semanas antes de una fecha; intensidad preservada y volumen recortado.
 - **Bloques de recuperación** — tras una fecha, el plan vuelve a una reentrada estructurada en lugar de soltarte de nuevo en una fase de construcción.
 
-Para objetivos abiertos, Corpus corre una estructura de estado estable: carga semana a semana predecible, ajustada a lo que tu readiness pueda sostener en el tiempo.
+Para objetivos abiertos, Corpus corre una estructura de estado estable: carga semana a semana predecible, ajustada a lo que tu disposición pueda sostener en el tiempo.
 
 ## Múltiples objetivos
 

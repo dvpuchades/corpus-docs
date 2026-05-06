@@ -23,7 +23,7 @@ El resultado es un nivel único — Excelente, Bueno, Regular o Malo — más un
 
 ## Qué significa "Regular" o "Malo"
 
-El nivel no es para hacerte sentir mal — es una bandera para el motor. Una noche Regular alimenta una readiness más baja, una recuperación más lenta y (a lo largo de unos días) un plan más ligero. El coach saca insights relacionados cuando son relevantes: *"Cafeína tarde registrada ayer — para ti se ha asociado con un 28% menos de sueño profundo."* Si tienes una intuición sobre lo que rompió la noche, el check-in matinal es exactamente el sitio para capturarla.
+El nivel no es para hacerte sentir mal — es una bandera para el motor. Una noche Regular alimenta una disposición más baja, una recuperación más lenta y (a lo largo de unos días) un plan más ligero. El coach saca insights relacionados cuando son relevantes: *"Cafeína tarde registrada ayer — para ti se ha asociado con un 28% menos de sueño profundo."* Si tienes una intuición sobre lo que rompió la noche, el check-in matinal es exactamente el sitio para capturarla.
 
 ## Despertar inteligente
 
@@ -40,7 +40,7 @@ Para que el despertar inteligente sea útil, duerme con el reloj. Sin datos noct
 
 ## Guía práctica
 
-- **El hábito con más impacto** para casi todo el mundo es la *consistencia* en la hora de acostarse. Un horario regular hace más por la readiness y la recuperación a lo largo de un mes que cualquier noche puntualmente buena.
+- **El hábito con más impacto** para casi todo el mundo es la *consistencia* en la hora de acostarse. Un horario regular hace más por la disposición y la recuperación a lo largo de un mes que cualquier noche puntualmente buena.
 - **Las siestas cuentan.** Una siesta de 20–40 minutos puede recuperar sorprendentemente bien una noche corta; las largas tienden a empujar la hora de acostarte y a perpetuar el problema.
 - **La deuda de sueño perdona, pero despacio.** Una noche aislada no se nota mucho al día siguiente; tres seguidas se notan mucho.
-- **La fase del ciclo importa** si menstrúas — Corpus la considera automáticamente en recuperación y readiness cuando hay datos del ciclo, así que no te sorprenda que tus necesidades de sueño y tu ritmo de recuperación se vean distintos semana a semana.
+- **La fase del ciclo importa** si menstrúas — Corpus la considera automáticamente en recuperación y disposición cuando hay datos del ciclo, así que no te sorprenda que tus necesidades de sueño y tu ritmo de recuperación se vean distintos semana a semana.

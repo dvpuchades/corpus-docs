@@ -1,6 +1,6 @@
 ---
 title: Política de privacidad
-summary: Corpus está construido para que tus datos de salud brutos no salgan de tu dispositivo. Sólo se envía un resumen estructurado y anonimizado para generar el coaching, sin analíticas de terceros, sin requerir cuenta y con borrado total bajo tu control.
+summary: Corpus mantiene tus datos de salud en tu dispositivo como única fuente de verdad — no se guarda nada en servidor. El coach de IA usa sólo lo que necesita para generar un coaching útil, sin analíticas de terceros, sin requerir cuenta y con borrado total bajo tu control.
 version: federer-2001
 effective: 2026-05-05
 updated: 2026-05-05
@@ -12,7 +12,7 @@ Corpus existe para ayudarte a entender tu cuerpo. Esa misión sólo funciona si 
 
 Cuatro compromisos que asumimos con cada usuario:
 
-1. Tus datos de salud brutos no salen de tu dispositivo.
+1. Tus datos de salud viven en tu dispositivo — no se guarda nada en nuestros servidores.
 2. No vendemos, compartimos ni monetizamos tus datos.
 3. No hace falta cuenta para usar Corpus.
 4. Puedes borrarlo todo cuando quieras.
@@ -27,15 +27,15 @@ El responsable del tratamiento de Corpus es **David Puchades Todolí**. Las cons
 
 Con tu permiso, Corpus lee las siguientes categorías desde Apple Salud en tu dispositivo:
 
-- **Frecuencia cardíaca y variabilidad** — medidas en reposo, activas y de variabilidad usadas para evaluar readiness, estrés y recuperación.
+- **Frecuencia cardíaca y variabilidad** — medidas en reposo, activas y de variabilidad usadas para evaluar disposición, estrés y recuperación.
 - **Sueño** — fases (profundo, REM, ligero, despierto), duración y horarios para evaluar la calidad del sueño y detectar siestas.
 - **Actividad** — pasos, energía activa, sesiones de entrenamiento y minutos de ejercicio para calcular esfuerzo y carga.
-- **Frecuencia respiratoria y temperatura de muñeca** — usadas cuando están disponibles para mejorar la evaluación de readiness y recuperación.
+- **Frecuencia respiratoria y temperatura de muñeca** — usadas cuando están disponibles para mejorar la evaluación de disposición y recuperación.
 - **Movilidad** — velocidad al caminar y asimetría, captadas pasivamente por el iPhone.
 - **Oxígeno en sangre** — usado cuando está disponible como señal adicional de recuperación.
-- **Composición corporal** — peso, % de grasa y masa magra desde balanzas inteligentes que sincronicen con Apple Salud.
+- **Composición corporal** — peso, % de grasa y masa magra desde básculas inteligentes que sincronicen con Apple Salud.
 - **Mindfulness** — sesiones de meditación y respiración usadas para detección automática de hábitos.
-- **Ciclo menstrual** — datos de flujo usados para considerar la fase del ciclo en readiness y recuperación, y para registro automático de hábitos cuando están disponibles.
+- **Ciclo menstrual** — datos de flujo usados para considerar la fase del ciclo en disposición y recuperación, y para registro automático de hábitos cuando están disponibles.
 
 ### Desde ti
 
@@ -47,7 +47,7 @@ Con tu permiso, Corpus lee las siguientes categorías desde Apple Salud en tu di
 
 ## Dónde se almacenan tus datos
 
-**Todo se queda en tu dispositivo.** En concreto:
+**Tu dispositivo es el único sitio donde viven tus datos.** En concreto:
 
 - Todos los datos de salud brutos leídos de Apple Salud.
 - Tus métricas de salud calculadas y su historial.
@@ -55,32 +55,27 @@ Con tu permiso, Corpus lee las siguientes categorías desde Apple Salud en tu di
 - Tus insights personalizados y las correlaciones detrás de ellos.
 - Tus objetivos, perfil, resumen del plan y el historial del chat.
 
-Corpus procesa tus datos de salud localmente en tu dispositivo para generar tus métricas diarias. Nada se almacena en nuestros servidores.
+Corpus procesa tus datos de salud localmente en tu dispositivo para generar tus métricas diarias. **Nada se almacena en nuestros servidores.**
 
 ## Terceros
 
-Corpus utiliza **Anthropic** (Claude API) como servicio de IA que genera respuestas de coaching, planes de entrenamiento y respuestas del chat. Anthropic procesa el resumen estructurado del día descrito en *§ Lo que se envía al servicio de IA* en tiempo real y no retiene datos biométricos más allá de la duración de esa única petición.
+Corpus utiliza **Anthropic** (Claude API) como servicio de IA que genera respuestas de coaching, planes de entrenamiento y respuestas del chat. Anthropic procesa los datos descritos en *§ Lo que se envía al servicio de IA* en tiempo real y no los retiene más allá de la duración de esa única petición.
 
 Corpus **no** utiliza analíticas de terceros, publicidad ni SDKs de tracking.
 
 ## Lo que se envía al servicio de IA
 
-Para generar tu coaching, los planes de entrenamiento y las respuestas del chat, Corpus envía un **resumen estructurado del día** al servicio de IA por una conexión cifrada (HTTPS). Ese resumen contiene:
+Para generar tu coaching, los planes de entrenamiento y las respuestas del chat, Corpus envía datos al servicio de IA bajo demanda por una conexión cifrada (HTTPS). Por defecto se trata de un **resumen estructurado del día**, que contiene:
 
-- **Niveles de tus métricas** (por ejemplo "Sueño: Regular", "Readiness: Bueno") — no las medidas brutas detrás.
-- Un historial de 7 días de estados de métricas y hábitos registrados.
+- **Niveles de tus métricas** (por ejemplo "Sueño: Regular", "Disposición: Buena").
+- Un historial reciente de estados de métricas y hábitos registrados.
 - Tus objetivos, resumen del perfil y plan de entrenamiento actual.
 - Tus notas y respuestas del check-in (sólo texto).
 - Mensajes del chat durante una conversación.
 
-Lo que **no** se envía:
+Cuando el coach necesita más detalle para responder a una pregunta concreta o producir un mejor insight, puede pedir datos adicionales a tu dispositivo bajo demanda — por ejemplo, la traza de frecuencia cardíaca de un entrenamiento, las fases de sueño de una noche o un historial más amplio. Sólo se envían los datos necesarios para esa petición, y sólo en el momento en que se necesitan.
 
-- Series temporales brutas de frecuencia cardíaca, HRV u otros biométricos.
-- Desglose de fases de sueño ni datos brutos de sueño.
-- Rutas de GPS ni streams detallados de entrenamientos.
-- Fotos, más allá del momento del análisis (ver abajo).
-
-El servicio de IA procesa el resumen en tiempo real para generar una respuesta. **No se guarda ningún dato biométrico en servidor más allá de la duración de esa única petición.**
+El servicio de IA procesa lo que recibe en tiempo real para generar una respuesta. **No se guarda nada en servidor más allá de la duración de esa única petición** — los datos se envían, se usan y se descartan. La única copia persistente se queda en tu dispositivo.
 
 ## Tratamiento de fotos
 
