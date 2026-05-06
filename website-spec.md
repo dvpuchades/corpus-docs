@@ -119,7 +119,7 @@ Match the app's visual language. The app is "Apple Fitness–inspired: dark back
 | Background | Deep black (#000) with subtle elevated surfaces (#0E0E10, #1A1A1D) |
 | Text primary | #FFFFFF |
 | Text secondary | #A1A1A6 |
-| Accent | Purple #BF5AF2 (matches app body-composition accent) |
+| Accent | Electric blue #0A84FF (iOS system blue, dark-mode native) |
 | Success / readiness | System green (#30D158) |
 | Strain / warning | System orange (#FF9F0A) |
 | Border / hairline | #2C2C2E |

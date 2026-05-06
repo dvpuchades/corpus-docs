@@ -1,5 +1,5 @@
 // Generates /public/og/{en,es}.png — 1200x630 OG cards.
-// Same tokens as the live site (dark, accent purple, Inter).
+// Same tokens as the live site (dark, accent electric blue, Inter).
 // Re-renders on every build so copy/locale changes pick up automatically.
 
 import { promises as fs } from "node:fs";
@@ -16,7 +16,7 @@ const TOKENS = {
   bgElev1: "#0E0E10",
   textPrimary: "#FFFFFF",
   textSecondary: "#A1A1A6",
-  accent: "#BF5AF2",
+  accent: "#0A84FF",
   hairline: "#2C2C2E",
 };
 
