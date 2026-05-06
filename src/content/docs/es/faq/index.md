@@ -1,14 +1,14 @@
 ---
 title: Preguntas frecuentes
-summary: Respuestas rápidas a lo que la gente pregunta más — qué hardware necesitas, cómo funciona el coach del chat, qué hace Corpus con tus datos, balanzas inteligentes, ciclo, carga mental y cuánto tarda en aparecer el primer insight.
+summary: Respuestas rápidas a lo que la gente pregunta más — cuánto cuesta Corpus, qué hardware necesitas, cómo funciona el coach del chat, qué hace Corpus con tus datos, balanzas inteligentes, ciclo, carga mental y cuánto tarda en aparecer el primer insight.
 section: faq
 order: 1
 updated: 2026-05-05
 ---
 
-## ¿Corpus es gratis?
+## ¿Cuánto cuesta Corpus?
 
-Sí. Sin suscripción y sin compras dentro de la app. Toda la app, el coaching diario, los insights personalizados, el chat — incluido.
+**3,99 € al mes** — lo que cuesta un café en Irlanda, o un desayuno en España. No hay versión gratuita; todo lo que ves en la app — el coaching diario, los insights personalizados, el chat, el plan semanal — está incluido en esa única suscripción. Sin compras dentro de la app, sin extras.
 
 ## ¿Necesito Apple Watch?
 
@@ -16,7 +16,7 @@ Puedes instalar Corpus sólo con iPhone, pero el Apple Watch es lo que te da la 
 
 ## ¿Sustituye Corpus a Whoop, Oura o Garmin Coach?
 
-Para la mayoría, sí. El argumento de Whoop, Oura y compañía es que combinan buena lectura biométrica con coaching. El Apple Watch ya hace la lectura biométrica al menos igual de bien — Corpus es la capa de coaching que falta encima, sin la cuota de 30 €/mes, sin la pulsera o anillo extra, sin el cargador adicional ni la cuenta extra.
+Para la mayoría, sí. El argumento de Whoop, Oura y compañía es que combinan buena lectura biométrica con coaching. El Apple Watch ya hace la lectura biométrica al menos igual de bien — Corpus es la capa de coaching que falta encima, a 3,99 €/mes en lugar de unos 30 €, sin la pulsera o anillo extra, sin el cargador adicional ni la cuenta extra.
 
 Lo que Corpus *no* intenta ser: un anillo de sueño que llevas cuando no entrenas, ni una alternativa a un reloj de moda. Si específicamente prefieres el formato anillo, Oura sigue siendo el producto adecuado.
 

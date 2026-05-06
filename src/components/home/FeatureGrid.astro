@@ -13,6 +13,7 @@ type Card = {
   body: string;
   image?: string;
   alt?: string;
+  imagePosition?: "top" | "bottom" | "center";
   icon?: "spark" | "lock" | "heart";
 };
 
@@ -21,63 +22,66 @@ const screenshotDir = locale === "es" ? "/images/app/es" : "/images/app/en";
 const cards: Card[] = locale === "es"
   ? [
       {
-        title: "Recuperación, esfuerzo y readiness",
-        body: "Seis métricas diarias destiladas de tus datos de Apple Salud — con niveles claros, no números crípticos.",
+        title: "Seis métricas claras y un comentario que cambia con tu cuerpo",
+        body: "Sueño, readiness, esfuerzo, estrés, recuperación y pasos — con niveles, no números crípticos. Y un comentario diario del coach que explica qué pasó esta noche.",
         image: `${screenshotDir}/dashboard.jpeg`,
-        alt: "Pantalla principal de Corpus mostrando recuperación, sueño y esfuerzo",
+        alt: "Pantalla principal de Corpus con el comentario del coach, las seis métricas y las notas del día",
       },
       {
-        title: "Objetivos y plan semanal",
-        body: "Un plan periodizado para tu objetivo, que se reorganiza cuando la vida cambia. Marca un día como ocupado y la semana se reajusta sola.",
+        title: "Tu plan semanal, basado en tu objetivo",
+        body: "Un plan periodizado que se reorganiza cuando la vida cambia. Cada día tiene su anillo: sueño, trabajo, hueco disponible y entrenamiento.",
         image: `${screenshotDir}/roadmap.jpeg`,
-        alt: "Roadmap semanal de entrenamientos en Corpus",
+        alt: "Roadmap semanal en Corpus con anillos diarios para cada día",
       },
       {
-        title: "Notas por voz, foto y texto",
-        body: "Apunta una comida con una foto, un audio rápido o una nota. Corpus extrae las etiquetas y descubre qué te afecta de verdad.",
-        image: `${screenshotDir}/chat.jpeg`,
-        alt: "Chat con el coach de Corpus",
-      },
-      {
-        title: "Sueño e insights personalizados",
-        body: "Profundo, REM, consistencia, deuda de sueño y siestas. Y un descubrimiento al día sobre lo que mueve tus números.",
+        title: "Insights personalizados de tus hábitos",
+        body: "Tras dos o tres semanas, Corpus encuentra los patrones reales en tus datos: qué afecta a tu sueño, a tu recuperación, a tu energía.",
         image: `${screenshotDir}/insight.jpeg`,
-        alt: "Insight de sueño en Corpus",
+        alt: "Insight de sueño en Corpus mostrando patrones personalizados",
+      },
+      {
+        title: "Pídele al coach que cambie tu plan",
+        body: "El chat puede mover entrenamientos, ajustar la intensidad, replanificar tu semana o actualizar el objetivo. Sin salir de la conversación.",
+        image: `${screenshotDir}/chat.jpeg`,
+        alt: "Pantalla del chat de Corpus con sugerencias para preguntar al coach",
+        imagePosition: "bottom",
       },
       {
         title: "Hecho para Apple Salud",
-        body: "Lee lo que tu iPhone y tu Apple Watch ya registran. Funciona con balanzas inteligentes, datos de ciclo y mindfulness.",
+        body: "Lee lo que tu iPhone y tu Apple Watch ya registran. Funciona con balanzas inteligentes, datos del ciclo y sesiones de mindfulness.",
         icon: "heart",
       },
       {
         title: "On-device, privado por diseño",
-        body: "Tus datos brutos nunca salen del iPhone. Solo un resumen estructurado del día se envía para generar el coaching.",
+        body: "Tus datos brutos no salen del iPhone. Sólo un resumen estructurado del día se envía para generar el coaching.",
         icon: "lock",
       },
     ]
   : [
       {
-        title: "Daily readiness & recovery",
-        body: "Six daily metrics distilled from your Apple Health data — with clear levels, not cryptic numbers.",
+        title: "Six clear metrics and a coach who reads them for you",
+        body: "Sleep, readiness, strain, stress, recovery and steps — with levels, not cryptic numbers. Plus a daily coaching comment that explains what last night actually meant.",
         image: `${screenshotDir}/dashboard.jpeg`,
-        alt: "Corpus dashboard showing recovery, sleep and strain",
+        alt: "Corpus dashboard showing the coach's daily comment, six metric tiles, and today's notes",
       },
       {
-        title: "Workout detail & insights",
-        body: "Heart-rate zones, pace splits, route maps and an AI insight about every session — what your effort meant for tomorrow.",
-        image: `${screenshotDir}/workout.jpeg`,
-        alt: "Workout detail in Corpus with heart-rate zones and pace splits",
+        title: "Goals and a weekly roadmap that adapts",
+        body: "A periodized week shaped to your goal that reshuffles when life intervenes. Every day has its ring: sleep, work, free hours, training.",
+        image: `${screenshotDir}/week.jpeg`,
+        alt: "Weekly view in Corpus with day rings for each day of the week",
       },
       {
-        title: "Voice and photo notes",
-        body: "Log a meal with a photo, a quick voice note, or a typed note. Corpus extracts the tags and discovers what actually moves your numbers.",
-        image: `${screenshotDir}/chat.jpeg`,
-        alt: "Chat with the Corpus coach",
+        title: "Workout detail with an AI insight",
+        body: "Heart-rate zones, splits, route — and a session-specific paragraph about what your effort meant for your goal and what to do next.",
+        image: `${screenshotDir}/swimming.jpeg`,
+        alt: "Workout detail in Corpus with an AI-generated insight about a swim session",
       },
       {
-        title: "Goals & weekly roadmap",
-        body: "A periodized plan for your goal, that reshuffles when life changes. Mark a day as busy and the week reorganises itself.",
-        icon: "spark",
+        title: "Ask the coach to change your plan",
+        body: "The chat can move sessions, swap intensity, re-plan the week, or update your goal — straight from the conversation. No buttons, no menus.",
+        image: `${screenshotDir}/plan-chat.jpeg`,
+        alt: "Chat screen in Corpus with the user about to ask the coach to plan the week",
+        imagePosition: "bottom",
       },
       {
         title: "Built for Apple Health",
@@ -109,6 +113,7 @@ const title = locale === "es"
         body={c.body}
         image={c.image}
         imageAlt={c.alt}
+        imagePosition={c.imagePosition}
         icon={c.icon}
       />
     ))}

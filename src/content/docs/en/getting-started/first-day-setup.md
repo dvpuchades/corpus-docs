@@ -10,7 +10,7 @@ Corpus needs three things to be useful: access to your Apple Health data, a goal
 
 ## 1. Install and open
 
-[Download Corpus from the App Store.](https://apps.apple.com/app/id6761331575) iOS 26 is required (the app uses recent HealthKit APIs that older versions don't expose). Apple Watch Series 4 or later gives you the full picture; an iPhone alone still works, but readiness and recovery will be coarser without HRV and continuous heart rate.
+[Download Corpus from the App Store.](https://apps.apple.com/app/id6761331575) iOS 26.4 is required (the app uses recent HealthKit APIs that older versions don't expose). Apple Watch Series 4 or later gives you the full picture; an iPhone alone still works, but readiness and recovery will be coarser without HRV and continuous heart rate.
 
 ## 2. Grant Health permissions
 

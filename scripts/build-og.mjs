@@ -24,13 +24,13 @@ const COPY = {
   en: {
     eyebrow: "For iPhone & Apple Watch",
     headline: "The coach your Apple Watch was waiting for.",
-    sub: "Free. Built for Apple Health. No subscription.",
+    sub: "€3.99/month — the price of a coffee. Built for Apple Health.",
     domain: "corpus.dvpuchades.com",
   },
   es: {
     eyebrow: "Para iPhone y Apple Watch",
     headline: "El entrenador que tu Apple Watch estaba esperando.",
-    sub: "Gratis. Hecho para Apple Salud. Sin suscripción.",
+    sub: "3,99 €/mes — lo que cuesta un café. Hecho para Apple Salud.",
     domain: "corpus.dvpuchades.com",
   },
 };

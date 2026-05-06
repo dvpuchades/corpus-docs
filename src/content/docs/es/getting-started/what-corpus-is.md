@@ -1,6 +1,6 @@
 ---
 title: Qué es Corpus
-summary: Corpus es un entrenador para iOS que convierte los datos que tu iPhone y tu Apple Watch ya recogen en un plan diario hecho a tu medida — seis métricas claras, entrenamiento periodizado e insights basados en tus hábitos — sin hardware extra ni suscripción.
+summary: Corpus es un entrenador para iOS que convierte los datos que tu iPhone y tu Apple Watch ya recogen en un plan diario hecho a tu medida — seis métricas claras, entrenamiento periodizado e insights basados en tus hábitos — por 3,99 € al mes, sin hardware extra.
 section: getting-started
 order: 1
 updated: 2026-05-05
@@ -13,8 +13,8 @@ Tu Apple Watch y tu iPhone recogen, en silencio, miles de señales de salud cada
 ## Dónde encaja Corpus
 
 - **Apple Fitness y Salud** te dan los datos, pero no el plan.
-- **Whoop, Oura, Garmin Coach** te dan el plan, pero quieren una pulsera o un anillo encima de tu reloj — y 30 €/mes.
-- **Corpus** se mete en ese hueco. Tu Apple Watch ya es suficiente. Tu iPhone ya es suficiente.
+- **Whoop, Oura, Garmin Coach** te dan el plan, pero quieren una pulsera o un anillo encima de tu reloj — y unos 30 €/mes.
+- **Corpus** se mete en ese hueco, a 3,99 € al mes — lo que cuesta un café en Irlanda, o un desayuno en España. Tu Apple Watch ya es suficiente. Tu iPhone ya es suficiente.
 
 ## Lo que recibes
 

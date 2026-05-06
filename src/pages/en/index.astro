@@ -12,7 +12,7 @@ import { APP_ID, APP_STORE_URL, CONTACT_EMAIL, SITE_URL } from "~/i18n/utils";
 const locale = "en" as const;
 const headline = "The coach your Apple Watch was waiting for.";
 const subhead =
-  "Corpus reads your Apple Health data and turns it into a daily plan tuned to you — sleep, training, recovery, energy. No new hardware. No subscription.";
+  "Corpus reads your Apple Health data and turns it into a daily plan tuned to you — sleep, training, recovery, energy. No new hardware. €3.99 a month.";
 
 const lifestyle = [
   { src: "/images/lifestyle/running.jpg", alt: "Runner on a road at dawn" },
@@ -28,11 +28,11 @@ const jsonLd = [
     "@type": "SoftwareApplication",
     name: "Corpus",
     applicationCategory: "HealthApplication",
-    operatingSystem: "iOS 26",
+    operatingSystem: "iOS 26.4",
     description: subhead,
     url: SITE_URL + "/en/",
     image: SITE_URL + "/og/en.png",
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    offers: { "@type": "Offer", price: "3.99", priceCurrency: "EUR" },
     installUrl: APP_STORE_URL,
     sameAs: [APP_STORE_URL],
     softwareVersion: "1.x",

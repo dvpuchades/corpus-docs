@@ -1,14 +1,14 @@
 ---
 title: FAQ
-summary: Quick answers to the things people ask most — what hardware you need, how the chat coach actually works, what Corpus does with your data, smart scales, the cycle, mental load, and how long until insights show up.
+summary: Quick answers to the things people ask most — what Corpus costs, what hardware you need, how the chat coach actually works, what Corpus does with your data, smart scales, the cycle, mental load, and how long until insights show up.
 section: faq
 order: 1
 updated: 2026-05-05
 ---
 
-## Is Corpus free?
+## How much does Corpus cost?
 
-Yes. There's no subscription and no in-app purchases. The whole app, the daily coaching, the personalised insights, the chat — all included.
+**€3.99 a month** — the price of a coffee in Ireland, or a breakfast deal in Spain. There's no free tier; everything in the app — the daily coaching, the personalised insights, the chat, the weekly plan — is included in that single subscription. No in-app purchases, no upsells.
 
 ## Do I need an Apple Watch?
 
@@ -16,7 +16,7 @@ You can install Corpus with just an iPhone, but the Apple Watch is what gives yo
 
 ## Does Corpus replace Whoop, Oura, or Garmin Coach?
 
-For most people, yes. The argument for Whoop, Oura and similar is that they bundle good biometric reading with coaching. The Apple Watch already does the biometric reading at least as well — Corpus is the missing coaching layer on top, without the £30/month subscription, the extra strap, the extra charger, or the extra account.
+For most people, yes. The argument for Whoop, Oura and similar is that they bundle good biometric reading with coaching. The Apple Watch already does the biometric reading at least as well — Corpus is the missing coaching layer on top, at €3.99/month instead of around €30, with no extra strap, no extra charger, and no extra account.
 
 What Corpus *doesn't* try to be: a sleep ring you wear when you're not training, or a fashion-watch alternative. If you specifically prefer a ring form factor, Oura is still the right product.
 

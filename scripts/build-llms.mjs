@@ -24,12 +24,12 @@ const SECTION_ORDER = [
 const HEADER = {
   en:
     "# Corpus\n\n" +
-    "> The coach your Apple Watch was waiting for. Corpus reads your Apple Health data and turns it into a daily plan tuned to you — sleep, training, recovery, energy. No new hardware. No subscription.\n\n" +
-    "Corpus is an iOS app that translates the data your iPhone and Apple Watch already collect into six clear daily metrics (sleep, readiness, strain, stress, recovery, steps) plus body composition, and writes a personalised weekly training plan that adapts to your recovery and your schedule. All raw biometrics stay on the device; only an anonymised structured summary is sent to generate coaching.\n",
+    "> The coach your Apple Watch was waiting for. Corpus reads your Apple Health data and turns it into a daily plan tuned to you — sleep, training, recovery, energy. No new hardware. €3.99 a month — the price of a coffee in Ireland, or a breakfast deal in Spain.\n\n" +
+    "Corpus is an iOS app (iOS 26.4+) that translates the data your iPhone and Apple Watch already collect into six clear daily metrics (sleep, readiness, strain, stress, recovery, steps) plus body composition, and writes a personalised weekly training plan that adapts to your recovery and your schedule. All raw biometrics stay on the device; only an anonymised structured summary is sent to generate coaching. Corpus costs €3.99/month — there is no free tier, and everything in the app is included in that single subscription.\n",
   es:
     "# Corpus\n\n" +
-    "> El entrenador que tu Apple Watch estaba esperando. Corpus lee tus datos de Apple Salud y los convierte en un plan diario hecho a tu medida: sueño, entrenamiento, recuperación y energía. Sin hardware adicional. Sin suscripción.\n\n" +
-    "Corpus es una app de iOS que traduce los datos que tu iPhone y tu Apple Watch ya recogen en seis métricas diarias claras (sueño, readiness, esfuerzo, estrés, recuperación y pasos), más composición corporal, y escribe un plan semanal personalizado que se adapta a tu recuperación y tu agenda. Tus biométricos brutos se quedan en el dispositivo; solo se envía un resumen estructurado y anonimizado para generar el coaching.\n",
+    "> El entrenador que tu Apple Watch estaba esperando. Corpus lee tus datos de Apple Salud y los convierte en un plan diario hecho a tu medida: sueño, entrenamiento, recuperación y energía. Sin hardware adicional. 3,99 € al mes — lo que cuesta un café en Irlanda, o un desayuno en España.\n\n" +
+    "Corpus es una app de iOS (iOS 26.4+) que traduce los datos que tu iPhone y tu Apple Watch ya recogen en seis métricas diarias claras (sueño, readiness, esfuerzo, estrés, recuperación y pasos), más composición corporal, y escribe un plan semanal personalizado que se adapta a tu recuperación y tu agenda. Tus biométricos brutos se quedan en el dispositivo; solo se envía un resumen estructurado y anonimizado para generar el coaching. Corpus cuesta 3,99 €/mes — no hay versión gratuita, y todo lo que ves en la app está incluido en esa única suscripción.\n",
 };
 
 const TOP_LINKS = {

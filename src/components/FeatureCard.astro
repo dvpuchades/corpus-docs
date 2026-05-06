@@ -6,6 +6,7 @@ interface Props {
   imageAlt?: string;
   imageWidth?: number;
   imageHeight?: number;
+  imagePosition?: "top" | "bottom" | "center";
   icon?: "spark" | "lock" | "heart";
 }
 const {
@@ -15,12 +16,20 @@ const {
   imageAlt = "",
   imageWidth = 800,
   imageHeight = 1734,
+  imagePosition = "top",
   icon,
 } = Astro.props;
+
+const objectPosClass =
+  imagePosition === "bottom"
+    ? "object-bottom"
+    : imagePosition === "center"
+      ? "object-center"
+      : "object-top";
 ---
 <article class="reveal flex flex-col gap-5 rounded-card border border-hairline/70 bg-bg-1 p-6 transition hover:border-hairline">
   {image ? (
-    <div class="relative -mx-2 -mt-2 mb-1 overflow-hidden rounded-[14px] bg-bg-2">
+    <div class="relative -mx-2 -mt-2 mb-1 aspect-[4/5] overflow-hidden rounded-[14px] bg-bg-2">
       <img
         src={image}
         alt={imageAlt}
@@ -28,8 +37,12 @@ const {
         height={imageHeight}
         loading="lazy"
         decoding="async"
-        class="block w-full h-auto"
+        class:list={[
+          "absolute inset-0 h-full w-full object-cover",
+          objectPosClass,
+        ]}
       />
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-bg-1 to-transparent" />
     </div>
   ) : icon ? (
     <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-bg-2 text-accent">
